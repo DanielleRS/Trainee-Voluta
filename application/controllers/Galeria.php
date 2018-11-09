@@ -1,11 +1,13 @@
-<!DOCTYPE html>
-<html>
-    <body>
-        
-        <h2 class="subtitulo">Galeria</h2>
-        <img src="<?php echo base_url('assets/img/galeria/1.jpg');?>">
-        <img src="<?php echo base_url('assets/img/galeria/2.jpg');?>">
-        <img src="<?php echo base_url('assets/img/galeria/3.jpg');?>">
-        
-    </body>
-</html>
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+
+class Galeria extends CI_Controller {
+
+    public function index() {
+        $this -> load -> view('template/Html-header');
+        $this -> load -> view('template/Header');
+        $this -> load -> view('Galeria'); //carrega o arquivo home dentro da pasta view
+        $this -> load -> view('template/footer');
+    }
+}
+?>
