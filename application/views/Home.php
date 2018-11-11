@@ -2,9 +2,7 @@
   <div class="container my-auto">
     <div class="row">
       <div class="col-lg-10 mx-auto">
-        <h1 class="text-uppercase">
-          <strong style="color: #000000">banner sobre a empresa</strong>
-        </h1>
+        <img style="width: 100%; padding: 50px" src="<?php echo base_url('assets/img/banner.jpeg');?>">
         <hr class="light">
       </div>
     </div>
